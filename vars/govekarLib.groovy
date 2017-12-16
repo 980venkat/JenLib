@@ -5,7 +5,7 @@ def call(body) {
   body.delegate = config
   body()
   
-  println "This is from GOVEKAR LIBRARY"
- 
-  
+  def maild = config.emailid;
+  println "This is from GOVEKAR LIBRARY  >>"+maild
+
 }
