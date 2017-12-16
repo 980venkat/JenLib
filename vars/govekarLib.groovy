@@ -6,6 +6,6 @@ def call(body) {
   body()
   
   def maild = config.emailid;
-  println "This is from GOVEKAR LIBRARY  >>"+maild
+  mail  body: 'Building URL ${env.BUILD_URL}',  to: maild , subject: 'JOB ${env.JOB_NAME}'
 
 }
